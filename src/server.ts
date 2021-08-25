@@ -1,4 +1,5 @@
 import express, { NextFunction, Request, Response } from 'express';
+import 'express-async-errors';
 import router from './routes';
 
 const app = express();
@@ -21,8 +22,8 @@ app.use(
   },
 );
 
-app.get('/test', (request: Request, response: Response) => {
-  return response.json({ message: 'Hello API Secret!' });
-});
+// app.get('/test', (request: Request, response: Response) => {
+//   return response.json({ message: 'Hello API Secret!' });
+// });
 
 app.listen(3333, () => console.log('Server is running on port 3333.'));
