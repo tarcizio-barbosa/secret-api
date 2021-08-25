@@ -11,8 +11,10 @@ generator client {
 }
 
 model User {
-  id           String @id @default(uuid())
-  userName     String @db.VarChar
-  userEmail    String @db.VarChar
-  userPassword String @db.VarChar
+  id            String   @id @default(uuid())
+  userName      String   @db.VarChar
+  userEmail     String   @unique @db.VarChar
+  userPassword  String   @db.VarChar
+  userCreatedAt DateTime @default(now())
+  userUpdatedAt DateTime @updatedAt
 }
