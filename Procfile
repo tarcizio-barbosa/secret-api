@@ -1,3 +1,3 @@
-web: npm star
+web: npm start
 
 release: yarn prisma migrate deploy
