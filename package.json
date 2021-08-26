@@ -1,11 +1,17 @@
 {
   "name": "secret-api",
   "version": "1.0.0",
+  "engines": {
+    "yarn": "1.22.5"
+  },
   "main": "index.js",
   "repository": "git@github.com:tarcizio-barbosa/secret-api.git",
   "author": "Tarcizio B <tarcizio.barbosa@outlook.com>",
   "license": "MIT",
   "scripts": {
+    "build": "prisma generate",
+    "heroku-postbuild": "tsc",
+    "start": "node dist/server.js",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts"
   },
   "devDependencies": {
