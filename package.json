@@ -2,7 +2,7 @@
   "name": "secret-api",
   "version": "1.0.0",
   "engines": {
-    "yarn": "1.22.5"
+    "yarn": "1.22.15"
   },
   "main": "index.js",
   "repository": "git@github.com:tarcizio-barbosa/secret-api.git",
